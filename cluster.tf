@@ -17,6 +17,7 @@ module "network" {
   name                             = "gke-example"
   project                          = "terraform-module-cluster"
   network_name                     = "kube"
+  kubernetes_version               = "1.13.9-gke.3"
   nodes_subnetwork_name            = module.network.subnetwork
   pods_secondary_ip_range_name     = module.network.gke_pods_1
   services_secondary_ip_range_name = module.network.gke_services_1
