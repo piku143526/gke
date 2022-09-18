@@ -24,7 +24,7 @@ resource "google_container_cluster" "cluster" {
   }
 
   # This is believed to apply to the default node pool, which gets created then deleted.
-  initial_node_count       = 1
+  initial_node_count       = 2
   remove_default_node_pool = true
 
   # The absence of a user and password here disables basic auth
