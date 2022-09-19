@@ -8,7 +8,7 @@ variable "gke_cluster_name" {
 
 variable "region" {
   description = "The region for the node pool."
-  node_locations = "europe-west1-b,europe-west1-c,europe-west1-d"
+  
 }
 
 variable "initial_node_count" {
