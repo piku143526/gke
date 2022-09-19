@@ -3,7 +3,7 @@ module "network" {
   // base network parameters
   network_name     = "kube"
   subnetwork_name  = "kube-subnet"
-  region           = "europe-west1-b"
+  region           = "default"
   // subnetwork primary and secondary CIDRS for IP aliasing
   subnetwork_range    = "10.40.0.0/16"
   subnetwork_pods     = "10.41.0.0/16"
@@ -13,7 +13,7 @@ module "network" {
   
   module "cluster" {
   source                           = "./modules/vpc-native"
-  region                           = "europe-west1-b"
+  region                           = "default"
   name                             = "gke-example"
   project                          = "terraform-module-cluster"
   network_name                     = "kube"
