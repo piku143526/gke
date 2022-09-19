@@ -10,6 +10,6 @@ terraform {
 provider "google" {
   credentials = file("./terraform-sa.json")
   project = "noted-cider-362008"
-  region  = "us-west1"
-  zone    = "us-west1-c"
+  region  = "europe-west1-b,europe-west1-c,europe-west1-d"
+  zone    = "europe-west1-b,europe-west1-c,europe-west1-d"
 }
