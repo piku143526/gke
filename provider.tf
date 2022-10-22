@@ -11,6 +11,5 @@ provider "google" {
   credentials = file("./terraform-sa.json")
   project = "noted-cider-362008"
   region  = "europe-west1-b,europe-west1-c,europe-west1-d"
-  zone    = "europe-west1-b,europe-west1-c,europe-west1-d"
-  new zone = ""
+  zone    = "europe-west1-b,europe-west1-c,europe-west1-d"	
 }
